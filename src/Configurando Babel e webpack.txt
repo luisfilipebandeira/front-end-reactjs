@@ -1,0 +1,34 @@
+Configurando Babel
+    Criar uma pasta chamada web
+    Executar yarn init -y para criar o arquivo package.json
+        Este arquivo serve para guardar as informações de versões das dependências do projeto
+
+    Executar yarn add react react-dom para instalar o react e react-dom
+        O react é o core
+        O react-dom é um pacote que serve como ponto de entrada para os renderizadores de servidor e DOM para React
+
+    Executar yarn add @babel/core @babel/preset-env @babel/preset-react webpack webpack-cli para adicionar as dependências
+    
+    Executar yarn add @babel/plugin-transform-runtime -D
+        Para ser possível utilizar async await
+
+    Executar yarn add @babel/cli
+        É uma interface de linha de comando
+
+    Executar yarn babel src/index.js --out-file public/bundle.js
+        O parâmetro --out-file serve para indicar onde eu quero adicionar o arquivo convertido
+
+Configurando Webpack
+    Criar o arquivo webpack.config.js e realizar as configurações
+    
+    Executar yarn add babel-loader style-loader css-loader file-loader para instalar o babel-loader, style-loader, css-loader e file-loader
+    
+    Executar yarn webpack --mode development para converter os arquivos
+    
+    Executar yarn add webpack-dev-server -D
+        Essa ferramenta compila automaticamente os arquivos quando alterações no arquivo são detectadas
+    
+    Executar yarn webpack serve --mode development para iniciar o serve do webpack
+    
+    A cessar http://localhost:8080
+    
